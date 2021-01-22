@@ -1,0 +1,23 @@
+{
+  "name": "diegese",
+  "version": "1.0.0",
+  "description": "Depository of a personnal project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Francois-LBDC/diegese.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Francois-LBDC/diegese/issues"
+  },
+  "homepage": "https://github.com/Francois-LBDC/diegese#readme"
+}

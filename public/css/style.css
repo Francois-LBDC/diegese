@@ -1,0 +1,22 @@
+
+
+.container{
+    background-color: white;
+    margin: auto;
+    margin-top: 25vh;
+    width: 60%;
+    height: 50vh;
+    border-radius: 2rem;
+}
+
+.title {
+    font-size: 72px;
+  /* background: -webkit-linear-gradient(#eee 70%, #000000 30%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  */
+  color: white;
+  border-color: #000000;
+  -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+}
