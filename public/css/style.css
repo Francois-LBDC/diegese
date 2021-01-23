@@ -46,26 +46,17 @@ html
   transition: opacity .5s ease-in;
 }
 
-.circle {
-  border-radius: 50%;
-  background-color: #000000;
-  width: 100px;
-  height: 100px;
-}
-
 .content h1,
 .content p,
 .content span {
   margin: 0;
 }
 
-.dot:hover + .content,
-.dot:hover + .circle
+.dot:hover + .content
  {
   opacity: 1;
   transform: translate(-50%,0%);
 }
-
 
 
 .specificLocation {
