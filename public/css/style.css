@@ -3,6 +3,32 @@ html
   box-sizing: border-box;
 }
 
+.containers {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.container-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 50vw;
+  height: 100vh;
+  background-color: aquamarine;
+}
+
+.container-right {
+  position: relative;
+  left: 50vw;
+  width: 50vw;
+  background-color: grey;
+  min-height: 100vh;
+  padding: 3%;
+}
+
 .container{
     background-color: white;
     margin: auto;
@@ -24,16 +50,20 @@ html
     -webkit-text-stroke-color: #000000;
 }
 
+.definition {
+  margin: 5rem 0;
+}
+
 /* ici partie hover */
 
 .tooltip {
   position: relative;
+  margin: auto;
 }
 
 .dot {
   
   display: block;
-  margin: 15px;
   width: 100%;
   height:50vh;
   border: #000000 solid 1px;
