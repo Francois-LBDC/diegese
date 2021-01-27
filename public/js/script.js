@@ -30,20 +30,19 @@ window.onmousemove = function(e) {
             // TEST
             /*e.target.style.background= `radial-gradient(at ${e.clientX - offset.left}% ${e.clientY - offset.top}%, #000000,#eeeeee)`
             */
-           e.target.style.background= `radial-gradient(circle at ${e.clientX - offset.left}px ${e.clientY - offset.top}px, #000000 0%,transparent 100px)`
+           e.target.style.background= `radial-gradient(circle at ${e.clientX - offset.left}px ${e.clientY - offset.top}px, #000000 20px,#eeeeee 200px)`
 
 
            console.log(e.clientY - offset.top);
             //
-
-
         }
     } else {
             //	Remove visible class
         var content = document.getElementsByClassName('content');
         for (var i = 0; i < content.length; i++) {
-        		content[i].classList.remove('visible');
+                content[i].classList.remove('visible');
         }
+        this.document.querySelector('.dot').style.background = '#eeeeee';
     }
 
 };
