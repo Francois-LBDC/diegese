@@ -7,9 +7,6 @@ window.onmousemove = function(e) {
     if (e.target.classList.contains('dot')) {
         //	Content of dot which is hovered
 
-        // TEST
-        e.target.style.background = 'radial-gradient(circle,#000000, #eeeeee)';
-        //
         var $target = e.target.nextElementSibling;
         
         //	Only work with hovered target
@@ -26,12 +23,16 @@ window.onmousemove = function(e) {
             //console.log('e' , e.clientY);
             //console.log($target.style.top);
             $target.style.left = (e.clientX - offset.left ) + 'px';
-            
-            // TEST
-            /*e.target.style.background= `radial-gradient(at ${e.clientX - offset.left}% ${e.clientY - offset.top}%, #000000,#eeeeee)`
-            */
-           e.target.style.background= `radial-gradient(circle at ${e.clientX - offset.left}px ${e.clientY - offset.top}px, #000000 20px,#eeeeee 200px)`
+          
+            //WORKS 
 
+            if (e.target.classList.contains('diegese2')) {
+           e.target.style.background = `
+           radial-gradient(circle at 70%, #000000 0px,transparent 40px),
+           radial-gradient(circle at ${e.clientX - offset.left}px ${e.clientY - offset.top -40}px, #ff00ff 0px,#eeeeee 200px)`
+            } else {
+                e.target.style.background = `radial-gradient(circle at ${e.clientX - offset.left}px ${e.clientY - offset.top -40}px, #ff00ff 20px,#eeeeee 200px)`
+            }
 
            console.log(e.clientY - offset.top);
             //
